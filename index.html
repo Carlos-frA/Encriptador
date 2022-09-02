@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Encriptador</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/7399a8bec4.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <div class="main-container">
+
+            <div class="box-right">                 
+                <textarea class="text-result" cols="24" rows="15" readonly></textarea>
+
+                <img src="elementos graficos/picture.png" alt="Dibujo de muñeco analizando un diamante" class="sketch hide">
+
+                <h2 class="hide1">Ningún mensaje fue encontrado</h2>
+
+                <h3 class="hide2">Ingrese el texto que desee encriptar o desencriptar</h3>
+                    
+                <button class="copy-btn" onclick="copiar()">Copiar Texto</button>     
+            </div>
+       
+            <div class="logo-box">
+                <img src="elementos graficos/logo.png" alt="Logo Alura" class="logo">
+                <h1>Encriptador de Texto</h1>
+            </div>   
+            
+            <div class="box-text">
+                <textarea class="message" cols="40" rows="14" placeholder="Ingrese el texto aquí" autofocus></textarea>
+            </div>
+                
+            <div class="box-notice">
+                <img src="elementos graficos/exclamation.png" alt="circulo con signo de exclamación">
+                <p>Solo letras minúsculas y sin acentos</p>
+            </div>
+
+            <div class="buttons-box">
+                <button class="code-btn" onclick="encriptar()">Encriptar</button>
+                <button class="uncode-btn" onclick="desencriptar()">Desencriptar</button>
+            </div>
+            
+            <div class="footer">
+                <p>Carlos Atencio</p>
+                <a href="https://www.linkedin.com/in/carlos-asist-adm/"><i class="fa-brands fa-linkedin" id="linkedin-logo"></i></a>
+                <a href="https://github.com/Carlos-frA"><i class="fa-brands fa-github" id="github-logo"></i></a>
+
+                <img src="elementos graficos/oracle.png" class="oracle-logo">
+                <p>Oracle Next Education</p>
+
+                <img src="elementos graficos/logo.png" class="alura-logo">
+                <p>Alura LATAM</p>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+
+    </body>
+</html>
