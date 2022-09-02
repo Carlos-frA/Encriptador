@@ -292,6 +292,7 @@ body{
 
         display: flex;
         flex-direction: column;
+        justify-content: space-around;
         align-items: center;
     }
 
@@ -351,7 +352,81 @@ body{
     .footer{
         order: 6;
         height: 50px;
-        align-self: flex-end;
     }
     
+}
+
+@media screen and (max-width:375px) {
+    body{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .main-container{      
+        width: 375px;
+        height: 933px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .logo-box{
+        gap: 14px;
+        height: 50px;
+        margin-top: 10px;
+    }
+
+    .logo-box h1{
+        font-size: 26px;
+    }
+
+    .box-text{
+        width: 100%;
+        height: 380px;
+    }
+
+    .message{
+        height: 380px;
+    }
+
+    .box-notice{
+        height: 20px;
+    }
+
+    .buttons-box{
+        height: 75px;
+    }
+
+    .box-right{
+        width: 96%;
+        height: 300px;
+        margin: 0;
+    }
+
+    .hide1, .hide2{
+        margin: 0;
+    }
+
+    .footer{
+        gap: 6px;
+    }
+
+    .footer p{
+        text-align: center;
+        font-size: 14px;
+        margin: 0;
+    }
+
+    .oracle-logo{
+        width: 10%;
+        margin: 0 0 0 8px;
+    }
+    
+    .alura-logo{
+        width: 6%;
+        margin: 0 0 0 8px;
+    }
 }
